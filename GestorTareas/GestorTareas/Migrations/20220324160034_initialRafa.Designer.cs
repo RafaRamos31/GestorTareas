@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestorTareas.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20220324040307_Second")]
-    partial class Second
+    [Migration("20220324160034_initialRafa")]
+    partial class initialRafa
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
