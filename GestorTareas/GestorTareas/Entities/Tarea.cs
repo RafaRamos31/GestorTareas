@@ -1,4 +1,6 @@
-﻿namespace GestorTareas.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace GestorTareas.Entities
 {
     public class Tarea
     {
@@ -18,6 +20,12 @@
         public int UsuarioId { get; set; }
 
         public int CategoriaId { get; set; }
-        
+
+        [NotMapped]
+        public string newUsuario { get; set; }
+
+        [NotMapped]
+        public string newCategoria { get; set; }
+
     }
 }
