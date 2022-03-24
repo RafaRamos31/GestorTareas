@@ -15,7 +15,6 @@ namespace GestorTareas
 
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add services to the container.
             services.AddControllers().AddJsonOptions(x =>
             x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 

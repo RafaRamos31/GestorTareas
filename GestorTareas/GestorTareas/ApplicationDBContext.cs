@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using GestorTareas.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace GestorTareas
 {
@@ -8,6 +9,11 @@ namespace GestorTareas
         {
         }
 
+        public DbSet<Tarea> Tareas { get; set; }
+
+        public DbSet<Categoria> Categorias { get; set; }
+
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 
 }
